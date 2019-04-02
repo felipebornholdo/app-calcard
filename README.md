@@ -1,7 +1,12 @@
 ## Construindo o ambiente Frontend
+
 ```
-calcard-app$ npm install --save
-calcard-app$ npm install live-server -g
+*Executar após subir o ambiente API.
+```
+
+```
+npm install --save
+npm install live-server -g
 live-server
 ```
 
