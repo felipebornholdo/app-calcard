@@ -1,0 +1,11 @@
+{
+  "name": "calcard-app",
+  "dependencies": {
+    "angular": "1.4.3"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build --prod"
+  }
+}

@@ -1,0 +1,32 @@
+<div style="margin:10px" class="col-6">
+    <input type="search" class="form-control col-2" placeholder="Busca por CPF" ng-model="clientList.cpf" />
+</div>
+
+<table class="table table-bordered" ng-table="tableList">
+    <thead>
+        <tr>
+            <th scope="col">CPF</th>
+            <th scope="col">NOME</th>
+            <th scope="col">IDADE</th>
+            <th scope="col">ESTADO CIVIL</th>
+            <th scope="col">ESTADO</th>
+            <th scope="col">DEPENDENTES</th>
+            <th scope="col">RENDA R$</th>
+            <th scope="col">RESULTADO ANÁLISE</th>
+            <th scope="col">LIMITE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="c in client  | filter: clientList">
+            <td scope="row">{{c.cpf}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.age}}</td>
+            <td>{{c.maritalStatus}}</td>
+            <td>{{c.state}}</td>
+            <td>{{c.dependent}}</td>
+            <td>{{c.money}}</td>
+            <td>{{c.description}}</td>
+            <td>{{c.creditLimit}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,81 @@
+<form name="clientForm" ng-submit="submitForm()">
+        <div class="form-group row">
+            <label for="name" class="col-sm-1 col-form-label">Nome:</label>
+            <div class="col-4">
+                <input type="text" class="form-control form-control" ng-model="clients.name" id="name"
+                    maxlength="30">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="cpf" class="col-sm-1 col-form-label">CPF:</label>
+            <div class="col-3">
+                <input type="number" class="form-control" ng-model="clients.cpf" id="cpf">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="age" class="col-sm-1 col-form-label">Idade:</label>
+            <div class="col-1">
+                <input type="number" class="form-control" ng-model="clients.age" id="age">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="maritalStatus" class="col-sm-1 col-form-label">Estado Civil:</label>
+            <div class="col-2">
+                    <select class="col-sm-5 form-control" name="maritalStatus" ng-model="clients.maritalStatus" required>
+                        <option value=""></option>
+                        <option value="Solteiro">Solteiro</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Separado">Separado</option>
+                        <option value="Divorciado">Divorciado</option>
+                        <option value="Viúvo">Viúvo</option>
+                    </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="state" class="col-sm-1 col-form-label">Estado:</label>
+            <select class="col-sm-2 form-control" name="estado" ng-model="clients.state" required>
+                <option value=""></option>
+                <option value="Rondônia">Rondônia</option>
+                <option value="Acre">Acre</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Roraima">Roraima</option>
+                <option value="Pará">Pará</option>
+                <option value="Amapá">Amapá</option>
+                <option value="Tocantins">Tocantins</option>
+                <option value="Maranhão">Maranhão</option>
+                <option value="Piauí">Piauí</option>
+                <option value="Ceará">Ceará</option>
+                <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                <option value="Paraíba">Paraíba</option>
+                <option value="Pernambuco">Pernambuco</option>
+                <option value="Alagoas">Alagoas</option>
+                <option value="Sergipe">Sergipe</option>
+                <option value="Bahia">Bahia</option>
+                <option value="Minas Gerais">Minas Gerais</option>
+                <option value="Espírito Santo">Espírito Santo</option>
+                <option value="Rio de Janeiro">Rio de Janeiro</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Paraná">Paraná</option>
+                <option value="Santa Catarina">Santa Catarina</option>
+                <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                <option value="Mato grosso do Sul">Mato grosso do Sul</option>
+                <option value="Mato Grosso">Mato Grosso</option>
+                <option value="Goiás">Goiás</option>
+                <option value="Distrito Federal">Distrito Federal</option>
+            </select>
+        </div>
+        <div class="form-group row">
+            <label for="dependent" class="col-sm-1 col-form-label">Dependentes:</label>
+            <div class="col-1">
+                <input type="number" class="form-control form-control" ng-model="clients.dependent"
+                    id="dependent">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="money" class="col-sm-1 col-form-label">Renda:</label>
+            <div class="col-2">
+                <input type="text" class="form-control form-control" ng-model="clients.money" id="money">
+            </div>
+            <button class="btn btn-primary" type="submit" rerender="#tableList">Enviar</button>
+        </div>
+    </form>
